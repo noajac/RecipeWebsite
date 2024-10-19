@@ -1,0 +1,161 @@
+/* App Header */
+.appHeader {
+  background-color: #2e2d2b;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a deeper shadow for royal depth */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar Links */
+.appNav {
+  display: flex;
+  gap: 25px;
+}
+
+.appLink {
+  color: #f4e1b3;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.appLink:hover {
+  background-color: #f4e1b3;
+  color: #2e2d2b;
+}
+
+/* Modern style for the website title */
+.headline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  color: #5b3a29; /* Deep brown color for a royal touch */
+  text-align: center;
+  margin: 40px auto;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.headline::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #d4af37; /* Gold underline */
+  margin: 15px auto 0;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.headline:hover::after {
+  width: 120px;
+}
+
+/* Main Content */
+.main {
+  padding: 40px 20px;
+  background-color: #fdf8f2; /* Light cream background */
+  min-height: 80vh;
+}
+
+/* Recipe Card Styles */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipe-card {
+  background-color: #a65238; /* Deep red/brown color for a regal feel */
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.recipe-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #f4e1b3;
+}
+
+.recipe-card p {
+  font-size: 14px;
+  color: #f0d8c1;
+}
+
+.recipe-card a {
+  color: #f0d8c1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.recipe-card a:hover {
+  color: #d4af37; /* Gold accent on hover */
+}
+
+/* Footer */
+.footer {
+  background-color: #2e2d2b;
+  color: #f4e1b3;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer a {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: #f4e1b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .headline {
+    font-size: 36px;
+  }
+
+  .recipe-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-list {
+    grid-template-columns: 1fr;
+  }
+
+  .headline {
+    font-size: 28px;
+  }
+}

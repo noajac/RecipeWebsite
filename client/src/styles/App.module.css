@@ -1,0 +1,240 @@
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.appHeader {
+  background-color: #53474F;
+  padding: 15px 30px;
+  justify-content: space-between; /* Space between the Navbar and Nav items */
+  /* Increased padding for better spacing */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #6c5d6e;
+  /* Border for better visual separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for depth */
+}
+
+/* Navbar Links */
+.appLink {
+  text-decoration: none;
+  background-color: #53474F;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+}
+
+.appLink:hover {
+  background-color: #6c5d6e;
+  transform: scale(1.05);
+}
+
+.appLink:last-child {
+  margin-right: 0;
+}
+
+.appNav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.leftNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rightNav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.main {
+  padding: 20px;
+  background-color: #FFDCE8;
+  height: 700vh;
+}
+
+.footer {
+  padding: 10px;
+  background-color: #53474F;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+}
+
+.error {
+  color: #b33a3a;
+  font-weight: 500;
+  background-color: #fdecea;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 400px;
+  display: block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.button {
+  background-color: #53474F;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #6c5d6e;
+  transform: scale(1.03);
+}
+
+.button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.button:active {
+  background-color: #3e2f3f;
+  transform: scale(0.98);
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logoutButton {
+  background-color: #53474F;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #6c5d6e;
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 20px;
+}
+
+.form {
+  background-color: rgb(254, 244, 251);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: left;
+}
+
+.formHeading {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #53474F;
+}
+
+.inputField {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.addContentButton {
+  background-color: #53474F;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.addContentButton:hover {
+  background-color: #6c5d6e;
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.addRecipeButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.addRecipeButton:hover {
+  background-color: #45a049;
+}
+
+.inputField:focus {
+  border-color: #53474F;
+}

@@ -1,0 +1,35 @@
+/* Navbar.module.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff; /* Background color for the navbar */
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Spacing between logo and Home link */
+  }
+  
+  .homeLink {
+    text-decoration: none;
+    color: #000; /* Change to your preferred color */
+    font-weight: bold; /* Style for Home link */
+  }
+  
+  .userSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoutButton {
+    margin-left: 10px; /* Spacing for logout button */
+  }
+  

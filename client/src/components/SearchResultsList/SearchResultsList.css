@@ -1,0 +1,96 @@
+/* Container for the search results */
+.search-results-list {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping for multiple columns */
+  gap: 15px; /* Space between each recipe card */
+  padding: 20px; /* Padding around the container */
+  max-width: 1200px; /* Maximum width for better readability */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Each individual recipe card */
+.recipe-card {
+  display: center; /* Use flexbox for horizontal layout */
+  align-items: flex-start; /* Align items to the start */
+  background-color: #fff; /* White background for cards */
+  border-radius: 8px; /* Rounded corners for cards */
+  padding: 15px; /* Padding inside each card */
+  border: 1px solid #e0e0e0; /* Light border for cards */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  width: calc(50% - 15px); /* Width for two columns with gap adjustment */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.recipe-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Image section for the recipe */
+.recipe-image {
+  width: 100px; /* Fixed width for the image */
+  height: 100px; /* Fixed height for the image */
+  border-radius: 5px; /* Rounded corners for images */
+  margin-right: 15px; /* Space between the image and text */
+}
+
+/* Recipe title styling */
+.recipe-card h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.5rem; /* Font size for the title */
+  color: #333; /* Dark color for the title */
+}
+
+/* Recipe details container */
+.recipe-details {
+  margin-top: 5px; /* Space above details */
+  color: #555; /* Medium gray color for details */
+}
+
+/* Recipe details styling */
+.recipe-details p {
+  margin: 5px 0; /* Margin for spacing */
+  font-size: 0.9rem; /* Font size for details */
+}
+
+/* Link styling for view recipe */
+.view-recipe-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
+/* No results message styling */
+.no-results-message {
+  font-size: 1.5rem; /* Font size for no results message */
+  color: #af6969; /* Red color for no results */
+  text-align: center; /* Center the text */
+  padding: 10px; /* Padding around the message */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 800px) {
+  .recipe-card {
+    width: calc(100% - 15px); /* Full width on smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .recipe-card {
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center; /* Center align items in the card */
+  }
+
+  .recipe-image {
+    width: 80%; /* Full width for image on small screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below image */
+  }
+
+  .recipe-card h3 {
+    font-size: 1.4rem; /* Smaller font size for title */
+  }
+
+  .recipe-details p {
+    font-size: 0.8rem; /* Smaller font size for details */
+  }
+}

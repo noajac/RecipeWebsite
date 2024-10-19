@@ -1,0 +1,73 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Success Page Container */
+  .success-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe6eb; /* Light pink background */
+    text-align: center;
+  }
+  
+  /* Success Message */
+  .success-page h1 {
+    font-size: 2.5em;
+    color: #ff8fa0; /* Pink text color */
+    margin-bottom: 30px;
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* Checkmark Container */
+  .checkmark-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: transparent; /* Transparent background */
+    border-radius: 50%; /* Circular border */
+    border: 5px solid #4CAF50; /* Green border */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    margin-bottom: 30px;
+  }
+  
+  /* Checkmark Symbol */
+  .checkmark {
+    font-size: 80px; /* Large checkmark */
+    color: #4CAF50; /* Green color for checkmark */
+    position: relative;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .checkmark-container:hover .checkmark {
+    transform: scale(1.1); /* Slightly increase size on hover for interactivity */
+  }
+  
+  /* Success Page Link */
+  .success-page a {
+    font-size: 1.2em;
+    color: #ff8fa0;
+    text-decoration: none;
+    border: 2px solid #ff8fa0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .success-page a:hover {
+    background-color: #ff8fa0;
+    color: white;
+  }
+  

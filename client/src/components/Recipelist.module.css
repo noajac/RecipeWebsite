@@ -1,0 +1,111 @@
+/* Container for the recipe list */
+.recipe-list-container {
+    max-width: 1400px; /* Increased max-width for a wider layout */
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Logo styling */
+  .logo-container {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .logo {
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Grid layout for the recipe cards */
+  .recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Wider columns */
+    gap: 15px; /* Reduced gap between items */
+  }
+  
+  /* Recipe card styling */
+  .recipe-preview {
+    background-color: #a65238;
+    color: #fff;
+    padding: 15px; /* Reduced padding for a slimmer card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .recipe-preview:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Recipe image styling */
+  .recipe-image {
+    width: 100%;
+    height: 120px; /* Reduced height for a less thick appearance */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Reduced space below the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Recipe title styling */
+  .recipe-preview h3 {
+    font-size: 16px; /* Slightly smaller title */
+    font-weight: 600;
+    color: #f4e1b3;
+    margin: 8px 0 4px; /* Reduced margin */
+  }
+  
+  /* Recipe author styling */
+  .recipe-preview p {
+    font-size: 12px; /* Smaller font size */
+    color: #f0d8c1;
+    margin: 0;
+  }
+  
+  /* Styling for the Add Recipe button */
+  .addRecipeButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .addRecipeButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .recipe-title {
+      font-size: 36px;
+    }
+  
+    .recipe-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .recipe-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .recipe-title {
+      font-size: 28px;
+    }
+  }
+  
